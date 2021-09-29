@@ -23,8 +23,8 @@ shinyServer(function(input, output) {
         labs(x="x-label", y="y-label") +  # labels
         facet_wrap(~prediction)    # facet by prediction
     } 
-  
-
+    
+    
     else {
       # Boxplot
       ggplot(df_country(), aes_string(y = input$continuous_variable)) +
@@ -33,7 +33,7 @@ shinyServer(function(input, output) {
         labs(x="x-label", y="y-label") +  # labels
         facet_wrap(~prediction)    # facet by prediction
     }
-
+    
   })
   
   # TASK 6: Create logic to plot faceted bar chart or stacked bar chart
